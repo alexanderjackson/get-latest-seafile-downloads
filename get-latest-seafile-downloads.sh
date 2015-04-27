@@ -144,7 +144,7 @@ mv ${NGINX_NEW} ${NGINX}
 # -------------------------------------------
 # Test NGINX configuration and restart if o.k.
 # -------------------------------------------
-nginx -t && service nginx restart
+/usr/sbin/nginx -t && /usr/sbin/service nginx restart
 
 
 # -------------------------------------------
