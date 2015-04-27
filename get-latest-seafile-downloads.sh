@@ -35,7 +35,7 @@ for i in \
   pi.tar.gz \
   win32.tar.gz \
   i386.deb \
-  amd64.deb \
+  amd64.deb ; \
     do \
       wget -O- https://bitbucket.org/haiwen/seafile/downloads \
       | grep $i  \
