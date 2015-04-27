@@ -25,16 +25,17 @@ WEB_INDEX_NEW=${WEB_DIR}/index.html.new
 # Get newest download urls and write formatted to ${TEMP1}
 # -------------------------------------------
 for i in \
-  i386.tar.gz \
-  x86-64.tar.gz \
-  i386.deb \
-  amd64.deb \
-  pi.tar.gz \
-  win32.tar.gz \
   apk \
   en.msi \
+  msi \
   shibboleth.dmg \
-  en-shibboleth.msi ; \
+  dmg \
+  i386.tar.gz \
+  x86-64.tar.gz \
+  pi.tar.gz \
+  win32.tar.gz \
+  i386.deb \
+  amd64.deb \
     do \
       wget -O- https://bitbucket.org/haiwen/seafile/downloads \
       | grep $i  \
