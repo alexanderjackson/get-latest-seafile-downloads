@@ -70,7 +70,7 @@ cat >${WEB_INDEX_NEW}<<EOF
   <body>
     <h1>Latest Seafile Downloads</h1>
     <div>
-      <ul>
+      <ol>
 EOF
 
 
@@ -89,7 +89,7 @@ cat ${TEMP2} | \
 # Create HTML foot  for index page
 # -------------------------------------------
 cat >>${WEB_INDEX_NEW}<<EOF
-      </ul>
+      </ol>
       <h3>Last update: ${TIME}</h3>
     </div>
   </body>
